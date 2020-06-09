@@ -3,14 +3,24 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@blueprintjs/core": "^3.28.1",
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.5.0",
     "@testing-library/user-event": "^7.2.1",
+    "@tippy.js/react": "^3.1.1",
+    "@urbica/react-map-gl": "^1.13.1",
+    "@urbica/react-map-gl-cluster": "^0.2.0",
     "axios": "^0.19.2",
+    "mapbox-gl": "^1.10.1",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
+    "react-map-gl": "^5.2.7",
     "react-scripts": "3.4.1",
-    "react-simple-maps": "^2.1.0"
+    "react-simple-maps": "^2.1.0",
+    "react-svg-tooltip": "0.0.11",
+    "react-tooltip": "^4.2.6",
+    "supercluster": "^7.1.0",
+    "use-supercluster": "^0.2.8"
   },
   "scripts": {
     "start": "react-scripts start",
