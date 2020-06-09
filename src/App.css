@@ -21,3 +21,33 @@
   justify-content: center;
   align-items: center;
 }
+
+.cluster-markerRed {
+  color: #fff;
+  background: #c82519;
+  border-radius: 50%;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cluster-markerGreen {
+  color: #fff;
+  background: #19c828;
+  border-radius: 50%;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cluster-markerYellow {
+  color: #fff;
+  background: #f3e40e;
+  border-radius: 50%;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

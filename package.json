@@ -11,6 +11,7 @@
     "@urbica/react-map-gl": "^1.13.1",
     "@urbica/react-map-gl-cluster": "^0.2.0",
     "axios": "^0.19.2",
+    "classnames": "^2.2.6",
     "mapbox-gl": "^1.10.1",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",

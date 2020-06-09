@@ -5,6 +5,7 @@ import "./App.css";
 import "mapbox-gl/dist/mapbox-gl.css";
 import Tippy from "@tippy.js/react";
 import useSuperCluster from "use-supercluster";
+import classNames from "classnames";
 
 function MapChart() {
   const [markers, setMarkers] = useState([]);
@@ -64,6 +65,13 @@ function MapChart() {
     options: { radius: 75, maxZoom: 5 },
   });
 
+
+
+  const clusterClass = classNames({
+    "cluster-marker": points.length < 50,
+    "cluster-markerRed": points.length >+ 50
+  })
+
   return (
     <div>
       <MapGl
@@ -83,6 +91,13 @@ function MapChart() {
             point_count: pointCount,
           } = cluster.properties;
 
+          const clusterClass = classNames({
+            "cluster-marker": pointCount < 50,
+            "cluster-markerGreen": pointCount >= 50 && pointCount < 100,
+            "cluster-markerYellow": pointCount >= 100 && pointCount < 200,
+            "cluster-markerRed": pointCount >= 200,
+          })
+
           if (isCluster) {
             return (
               <Marker
@@ -91,7 +106,7 @@ function MapChart() {
                 latitude={latitude}
               >
                 <div
-                  className="cluster-marker"
+                  className={clusterClass}
                   style={{
                     width: `${10 + (pointCount / points.length) * 150}px`,
                     height: `${10 + (pointCount / points.length) * 150}px`,
