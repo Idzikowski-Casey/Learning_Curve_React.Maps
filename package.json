@@ -8,6 +8,7 @@
     "@testing-library/react": "^9.5.0",
     "@testing-library/user-event": "^7.2.1",
     "@tippy.js/react": "^3.1.1",
+    "@tippyjs/react": "^4.0.4",
     "@urbica/react-map-gl": "^1.13.1",
     "@urbica/react-map-gl-cluster": "^0.2.0",
     "axios": "^0.19.2",
